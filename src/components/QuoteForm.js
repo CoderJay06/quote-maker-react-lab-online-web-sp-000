@@ -19,15 +19,8 @@ class QuoteForm extends Component {
 
   handleOnChange = event => {
     // Handle Updating Component State
-    let contentInput, authorInput
-    if (event.target.name === "content") {
-       contentInput = event.target.value;
-    } else {
-       authorInput = event.target.value;
-    }
     this.setState({
-       content: contentInput,
-       author: authorInput
+       [event.target.name]: event.target.value
     })
   }
 
