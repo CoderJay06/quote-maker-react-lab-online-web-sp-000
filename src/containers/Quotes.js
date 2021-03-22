@@ -29,9 +29,9 @@ class Quotes extends Component {
                   return (<QuoteCard key={quote.id} 
                                     /* TODO: Fix these */
                                     quote={quote} 
-                                    removeQuote={removeQuote}
-                                    upvoteQuote={upvoteQuote}
-                                    downvoteQuote={downvoteQuote} />);
+                                    removeQuote={this.props.removeQuote}
+                                    upvoteQuote={this.props.upvoteQuote}
+                                    downvoteQuote={this.props.downvoteQuote} />);
                })}
             </div>
           </div>
